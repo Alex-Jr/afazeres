@@ -40,5 +40,7 @@ $(".fa-plus").click(function(){
 })
 
 $("body").keypress(function(event){
+    input = $("#tarefa");
     input.fadeIn();
+    input.focus();
 })
