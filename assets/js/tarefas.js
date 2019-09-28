@@ -14,5 +14,11 @@ $("#novo").on("click",function(event){
     input = $("input")
     if(input.val() != ""){
         $("ul").append('<li><span>X</span> '+ input.val()+ '</li>');
+        input.val("");
+        input.attr("placeholder", "Nova Tarefa...");
+        input.removeClass("nodata");
+    } else {
+        input.attr("placeholder", "Digite uma tarefa!");
+        input.addClass("nodata");
     }
 })

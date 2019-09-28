@@ -39,3 +39,8 @@ li{
 .feito{
     text-decoration: line-through;
 }
+
+.nodata::-webkit-input-placeholder {
+    color: rgb(187, 0, 0);
+    transition: 0.7s;
+}
