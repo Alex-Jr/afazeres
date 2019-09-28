@@ -99,3 +99,10 @@ li:hover span{
     width:50px;
     opacity: 1;
 }
+
+
+.arrow{
+    background: rgb(85, 211, 250);
+    float:right;
+    margin-right: 0;    
+}
