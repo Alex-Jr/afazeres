@@ -9,7 +9,7 @@ $("ul").on("click","span", function(event){
     event.stopPropagation();
 })
 
-$("#novo").on("click",function(event){
+$(".fa-plus").on("click",function(event){
     //Adiciona uma nova linha ao UL
     input = $("input")
     if(input.val() != ""){
