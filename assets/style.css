@@ -35,3 +35,7 @@ li{
     font-size: 30px;
     padding-top: 15px;
 }
+
+.feito{
+    text-decoration: line-through;
+}
