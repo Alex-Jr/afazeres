@@ -12,5 +12,7 @@ $("ul").on("click","span", function(event){
 $("#novo").on("click",function(event){
     //Adiciona uma nova linha ao UL
     input = $("input")
-    $("ul").append('<li><span>X</span> '+ input.val()+ '</li>');
+    if(input.val() != ""){
+        $("ul").append('<li><span>X</span> '+ input.val()+ '</li>');
+    }
 })
