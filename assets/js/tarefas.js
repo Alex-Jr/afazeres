@@ -13,7 +13,7 @@ $(".fa-plus").on("click",function(event){
     //Adiciona uma nova linha ao UL
     input = $("input")
     if(input.val() != ""){
-        $("ul").append('<li><span>X</span> '+ input.val()+ '</li>');
+        $("ul").append('<li><span><i class="fa fa-trash"></i></span>'+ input.val()+ '</li>');
         input.val("");
         input.attr("placeholder", "Nova Tarefa...");
         input.removeClass("nodata");
