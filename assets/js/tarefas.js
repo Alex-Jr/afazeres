@@ -38,3 +38,7 @@ $(".fa-plus").click(function(){
         input.fadeToggle();
     }
 })
+
+$("body").keypress(function(event){
+    input.fadeIn();
+})
