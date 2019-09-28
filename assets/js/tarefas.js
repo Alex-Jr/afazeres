@@ -24,7 +24,14 @@ $("ul").on("click",".down", function(event){
 function adicionar(input){
     if (input.val() != ""){
         input.removeClass("nodata");
-        $("ul").append('<li> <span class="trash"><i class="fa fa-trash"></i></span>'+ input.val()+'<span class="arrow down"><i class="fa fa-angle-down"></i></span><span class="arrow up"><i class="fa fa-angle-up"></i></span></li>');
+        $("ul").append(
+            '<li>\
+                <span class="trash"><i class="fa fa-trash"></i></span>'
+                +input.val()+
+                '<span class="arrow down"><i class="fa fa-angle-down"></i></span>\
+                <span class="arrow up"><i class="fa fa-angle-up"></i></span>\
+            </li>'
+        );
         input.val("");
         input.attr("placeholder", "Nova tarefa...");
     } else {    
